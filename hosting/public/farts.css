@@ -1,0 +1,108 @@
+@font-face {
+  /* hypothesis: if I keep style.css here in 'public' and have index.html get css from here and
+  NOT src/style.css then i wont have any issues with subdirectories not having correct css 
+  also life is easier with just 1 UNICO css file 
+
+  hypothesis true... now deleting style.css in the 'src' folder
+
+  borrowed from extrapractice.space */
+
+  font-family: "departure-webfont";
+  /* because this css file is already in 'public' folder */
+  src: url(./DepartureMono-Regular.woff) format("woff");
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* height: calc(33vw); */
+  gap: 20px;
+}
+
+figure.block-image {
+  border: dashed #000 1px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  height: 100%;
+}
+figure.block-image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  gap: 20px;
+  height: 100dvh;
+  width: 100vw;
+  color: #000;
+  background-color: #FAF9F4;
+  font-family: "departure-webfont";
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-weight: normal;
+}
+
+a, a::after {
+  color: inherit;
+}
+a:hover {
+  color: #ff790c;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  color: #21a1de;
+}
+
+.block {
+  padding: 10px;
+  border: dashed #000 1.75px;
+  border-radius: 10px;
+
+  max-width: 33vw;
+
+  overflow: scroll;
+}
+
+.block:hover {
+  background-color: #ccf0ff;
+}
+
+#idea {
+  font-family: "departure-webfont";
+  color: #bd7aff;
+  border: dashed #bd7aff 1.75px;
+}
+#idea:hover {
+  background-color: #bd7aff;
+  color: white;
+} 
+
+#map { 
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -15px;
+}
+
+/* end of extrapractice.space borrowing */
