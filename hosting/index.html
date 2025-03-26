@@ -5,21 +5,44 @@
     <link rel="icon" href="public/smiley4.gif" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>khang.computer</title>
-
     <link rel="stylesheet" href="./public/farts.css">
+
+    <!-- ^ also in my css file, but it needs to be here to work in html i think -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
+    </style>      
 
   </head>
   <body>
-    <main>
 
+    <!--  
+    <main>
+      comment below
+      ! shouldn't this technically be header?, 
+      comment below
+      ^ also i dont have a footer yet 
       <div class="grid-3"> 
         <h3 class="block">khang.computer</h3>
-        <!--  why does it have to ./404 and not ./public/404.html? -->
+        comment below 
+        & why does it have to ./404 and not ./public/404.html? 
         <h3 class="block">page testing: <a href="./404"
           >404 page</a> <a href="./langues"
           >langues</a>
         </h3>
         <h3 class="block">have i changed?</h3>
+      </div>
+
+      <div class="grid-3">
+        <section class="block">
+          <h2>bruh moment firebase thinks i dont own <a href="https://khang.computer" target="_blank"
+            >khang.computer</a> idk whats going on</h2>
+        </section>
+        <section class="block">
+          <h1>well obviously this website is still getting updated</h1>
+        </section>
+        <section class="block">
+          <h2>so im heading to bed. timestamp: sun mar 23 1:45:32 AM</h2>
+        </section>
       </div>
       
       <div class="grid-3">
@@ -85,5 +108,40 @@
         </section>
       </div>
     </main>
+    -->
+
+    <!-- new page starts here -->
+
+    <div id="window-container">
+      <div id="window">
+        <!-- header = window buttons -->
+        <header> 
+          <div id="texty">
+            CLICK ME →
+          </div>
+          <div id="house" class="clicky">
+            <img src="./public/khang house.png" />
+          </div>
+          <div id="smiley" class="clicky">
+            <img src="./public/khang smiley.png" />
+          </div>
+          <div id="mail" class="clicky">
+            <img src="./public/khang mail.png" />
+          </div> 
+        </header>
+        <!-- main = the window contents -->
+        <main>
+          <div>
+            all the main content goes here
+          </div>
+        </main>
+        <!-- footer = thing at very bottom of window -->
+        <footer>
+          im the footer, unfinished, but good thing its positions correctly—
+          see how there's the same amount of space between us?
+        </footer>
+      </div>
+    </main>
+
   </body>
 </html>
