@@ -10,7 +10,7 @@
 
   font-family: "departure-webfont";
   /* because this css file is already in 'public' folder */
-  src: url(./DepartureMono-Regular.woff) format("woff");
+  src: url(./fonts/DepartureMono-Regular.woff) format("woff");
 }
 
 
@@ -24,6 +24,8 @@
   ^ also im only fitting one box that doesnt even cover the whole window so i dont need padding anyway
   gap: 20px;
   padding: 20px; */
+
+  background-color: #fff1e2;
 }
 
 #window {
@@ -97,16 +99,16 @@ header {
   /* ^ solution for changing image when hover
   ^ scroll down a bit until u see "use content: "
   source: https://stackoverflow.com/questions/18813299/changing-image-on-hover-with-css-html */
-  content: url("../public/khang-house-green.png");
+  content: url("../public/images/khang-house-green.png");
 }
 
 #smiley:hover {
-  content: url("../public/khang-smiley-green.png")
+  content: url("../public/images/khang-smiley-green.png")
 }
 
 
 #mail:hover {
-  content: url("../public/khang-mail-green.png")
+  content: url("../public/images/khang-mail-green.png")
 }
 
 img {
