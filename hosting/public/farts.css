@@ -72,6 +72,10 @@ header {
   flex-grow: 1;
 }
 
+#texty:hover {
+  color: #08cc62;
+}
+
 .clicky {
   height: 0;
   min-height: 100%;
@@ -79,25 +83,31 @@ header {
   /* padding-left: 5px; */
   aspect-ratio: 1 / 1;
   /* NO flexgrow cuz i dont want it to grow */
+  cursor: pointer;
+  user-select: none;
 }
 
 #house, #smiley, #mail {
   border-left: solid 1px;
+  user-select: none;
 }
 
+
+/* ! i need to use JS to do this, not CSS because it doesnt load the content: url() image with firebase */
 #house:hover {
   /* ^ solution for changing image when hover
   ^ scroll down a bit until u see "use content: "
   source: https://stackoverflow.com/questions/18813299/changing-image-on-hover-with-css-html */
-  content: url("./khang\ house\ green.png");
+  content: url("../public/khang-house-green.png");
 }
 
 #smiley:hover {
-  content: url("./khang\ smiley\ green.png")
+  content: url("../public/khang-smiley-green.png")
 }
 
+
 #mail:hover {
-  content: url("./khang\ mail\ green.png")
+  content: url("../public/khang-mail-green.png")
 }
 
 img {
@@ -108,7 +118,6 @@ img {
 }
 
 
-
 main {
   display: flex;
   /* ^ this just for the window, not any text so don't need this:
@@ -117,7 +126,9 @@ main {
 }
 
 footer {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -159,10 +170,12 @@ figure.block-image img {
 }
 
 a, a::after {
+  text-decoration: none;
   color: inherit;
 }
+
 a:hover {
-  color: #ff790c;
+  text-decoration: none;
 }
 
 /* h1, h2 {
