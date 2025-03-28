@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./farts.css">
+  <link rel="icon" href="./images/khang-house.png" />
+  <title>login</title>
+  <style>
+    input, button {
+      border: none;
+    }
+  </style>
+  <script>
+    let password = function() {
+      let userInput = document.getElementById("login").value;
+      console.log(userInput);
+      // if (userInput == process.env.FRIENDS_PASSWORD) {
+      //   document.getElementById("herro").textContent = "yes!"
+      // } else {
+      //   document.getElementById("herro").textContent = "nope... rip"
+      // }
+    }
+  </script>
+</head>
+<body>
+  <div id="window-container">
+    <div id="window">
+      <header> 
+        <div id="texty">
+          <a href="/">
+            → INDEX ← 
+          </a>
+        </div>
+        <a href="./home">
+          <div id="house" class="clicky">
+            <img src="./images/khang-house.png" />
+          </div>
+        </a>
+
+        <a href="./login">
+          <div id="smiley" class="clicky">
+            <img src="./images/khang-smiley.png" />
+          </div>
+        </a>
+
+        <a href="./contact">
+          <div id="mail" class="clicky">
+            <img src="./images/khang-mail.png" />
+          </div> 
+        </a>
+      </header>
+      <main>
+        <input id="login" type="text"/>
+        <button type="button" onclick="password()">im a button :O</button>
+        <p>did u get the password right?</p>
+        <p id="herro">the answer is... %TEST_VAR%</p>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
