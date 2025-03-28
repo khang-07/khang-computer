@@ -1,5 +1,6 @@
 node_modules
 hosting/node_modules
+import.meta.env
 
 # Logs
 logs
