@@ -10,15 +10,7 @@
     }
   </style>
   <script>
-    let password = function() {
-      let userInput = document.getElementById("login").value;
-      console.log(userInput);
-      // if (userInput == process.env.FRIENDS_PASSWORD) {
-      //   document.getElementById("herro").textContent = "yes!"
-      // } else {
-      //   document.getElementById("herro").textContent = "nope... rip"
-      // }
-    }
+    // put onclick=function() into <button>
   </script>
 </head>
 <body>
@@ -48,11 +40,10 @@
           </div> 
         </a>
       </header>
-      <main>
+      <main id="risposta">
         <input id="login" type="text"/>
-        <button type="button" onclick="password()">im a button :O</button>
+        <button type="button">im a button :O</button>
         <p>did u get the password right?</p>
-        <p id="herro">the answer is... %TEST_VAR%</p>
       </main>
     </div>
   </div>
