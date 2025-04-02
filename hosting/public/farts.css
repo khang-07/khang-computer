@@ -121,6 +121,7 @@ img {
 
 main {
   display: flex;
+  flex-direction: column;
   /* ^ this just for the window, not any text so don't need this:
   text-align: center; */
   border-bottom: solid 1px;
@@ -128,10 +129,10 @@ main {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  padding-left: 5px;
-  padding-right: 5px;
+  justify-items: center;
+  justify-content: center;
 }
 
 p {
@@ -163,6 +164,9 @@ a:hover {
   text-decoration: none;
 }
 
+#link {
+  color: orchid;
+}
 
 /* ! borrowed from extrapractice.space 
 .grid-3 {
